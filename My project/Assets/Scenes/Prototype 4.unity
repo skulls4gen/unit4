@@ -133,7 +133,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1742899641471652, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742899641471652, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4428908044626120, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
       propertyPath: m_LocalScale.x
@@ -424,7 +428,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   hasPowerup: 0
-  powerupIndicator: {fileID: 0}
+  powerupIndicator: {fileID: 1135293511}
+--- !u!1 &1114488933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2063207832611969128, guid: 8491a9dbebb26844b86f600686412be9, type: 3}
+  m_PrefabInstance: {fileID: 8939403200330636523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1135293511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1742899641471652, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
+  m_PrefabInstance: {fileID: 38089742}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1194246790
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,6 +469,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 4008846846599841852, guid: 9e4e1b61d58497142bb2119faf85689f, type: 3}
+  enemyCount: 0
+  waveNumber: 1
+  powerupPrefab: {fileID: 1114488933}
 --- !u!4 &1194246792
 Transform:
   m_ObjectHideFlags: 0
